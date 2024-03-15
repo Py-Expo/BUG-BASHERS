@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home Page</title>
+</head>
+<body>
+    <h1>Recent Disasters</h1>
+    <ul>
+        {% for disaster in disasters %}
+            <li>
+                <h2>{{ disaster.name }}</h2>
+                <p>Amount Needed: {{ disaster.amount_needed }}</p>
+                <p>Amount Collected: {{ disaster.amount_collected }}</p>
+                <button><a href="{{ url_for('payment') }}">Pay</a></button>
+            </li>
+        {% endfor %}
+    </ul>
+</body>
+</html>

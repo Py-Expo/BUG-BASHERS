@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Donation Success</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f8f9fa;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .container {
+            text-align: center;
+        }
+
+        h1 {
+            color: #343a40;
+            font-size: 36px;
+            margin-bottom: 30px;
+        }
+
+        .success-message {
+            background-color: #28a745;
+            color: #fff;
+            border-radius: 10px;
+            padding: 30px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .quote {
+            font-style: italic;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Donation Success!</h1>
+        <div class="success-message">
+            <p>Your donation has been processed successfully.</p>
+            <p>Thank you for your generosity!</p>
+            <p class="quote">"The smallest act of kindness is worth more than the grandest intention." - Oscar Wilde</p>
+        </div>
+    </div>
+</body>
+</html>

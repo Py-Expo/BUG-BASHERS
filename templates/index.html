@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Homepage</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+    <style>
+         ul {
+            list-style-type: none;
+            background-color: #0000000a;
+            overflow: hidden;
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 1000;
+         }
+
+        li {
+            float: right;
+        }
+
+        li a {
+            display: block;
+            padding: 8px;
+            background-color: #dddddd00;
+            color: rgba(252, 253, 253, 0.915); /* Change text color */
+            text-decoration: none; /* Remove underline */
+        }
+
+        li a:hover {
+            background-color: #555; /* Change background color on hover */
+            color: white; /* Change text color on hover */
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            margin: 134;
+            padding-right: 2000px;
+            display: flex;
+            justify-content: left;
+            align-items: center;
+            height: 100vh;
+            background-image: url("https://www.dbs.com.tw/documents/1055043/8095487/crowdfunding-campaign-pd-1404X630.jpg/d20462df-fcfe-573a-d84d-45c745e7659a?t=1581995537128");
+            background-size: cover;
+            background-position: center;
+        }
+
+        .container {
+            text-align: center;
+        }  
+
+        h1 {
+            color: #343a40;
+            font-size: 36px;
+            margin-bottom: 30px;
+        }
+
+        a {
+            display: inline-block;
+            padding: 10px 20px;
+            margin: 10px;
+            background-color: #007bff;
+            color: #fff;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+        }
+         /* Resetting default margin and padding */
+         body, ul {
+            margin: 0;
+            padding: 0;
+        }
+
+        a:hover {
+            background-color: #0056b3;
+        }
+
+        .quote {
+            font-style: italic;
+            margin-top: 20px;
+        }
+    h2{
+        color: #343a40;
+            font-size: 36px;
+        padding-bottom: 690px;
+        padding-left: 20px;
+        
+
+    }
+    </style>
+    
+</head>
+ <h2>CrowdFunds</h2>
+<body>
+
+    <ul> 
+        
+        <li><a href="/login">Login</a></li>
+        <li><a href="/signup">Signup</a></li>
+        <li><a href="/#">Home</a></li>
+    </ul>
+     <div class="logo"> <!-- Logo -->
+        
+    </div>
+
+    <div class="container">
+        <h1>Welcome to the Fund Collecting App</h1>
+        <a href="/donate">Fund Now</a>
+        <a href="/disaster">View Ongoing Disasters</a>
+        
+        <p class="quote">"The world is changed by your example, not by your opinion." - Paulo Coelho</p>
+
+        <a href="/partner">Register as NGO</a>
+    </div>
+
+</body>
+</html>
